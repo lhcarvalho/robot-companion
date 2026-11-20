@@ -43,3 +43,6 @@ Acquire/import official dimensioned STEP of Waveshare board, camera and LCD draw
 - **Firmware PR #11 merged:** `firmware/` ESP-IDF scaffold for P4, safe-idle loop, `tests/SMOKE_TEST_MATRIX.md`. ESP-IDF unavailable in this execution; **NOT COMPILED / NOT RUN**. **Issue #7 remains open.**
 
 **Next owner actions:** vendor STEP/import and cable routing (A), J6 physical pinout and protected servo supply (B), compile scaffold with ESP-IDF and provide build log (C). Completion of PRs is partial progress, not completion of G1/G2/G3.
+
+## Governance update — 2026-11-20
+Repository visibility confirmed **public** through GitHub API. Owner requests PR review and merges **only by `lhcarvalho`**; AI agents must stop after creating PRs. The earlier automatic merge practice is superseded. This change does not imply branch protection has been configured. Current firmware motion-safety implementation is proposed in an unmerged PR; keep issue #7 open until build/bench validation.
