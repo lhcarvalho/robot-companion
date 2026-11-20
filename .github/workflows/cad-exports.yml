@@ -1,0 +1,78 @@
+name: CAD exports (PNG, STL, GLB)
+on:
+  push:
+    branches:
+      - 'agent/**'
+      - 'design/**'
+      - 'cad/**'
+    paths:
+      - 'mechanics/cad/**'
+      - 'scripts/render_cad_assets.py'
+      - 'scripts/verify_cad_assets.py'
+      - '.github/workflows/cad-exports.yml'
+  pull_request:
+    paths:
+      - 'mechanics/**'
+      - 'scripts/render_cad_assets.py'
+      - 'scripts/verify_cad_assets.py'
+      - '.github/workflows/cad-exports.yml'
+permissions:
+  contents: write
+jobs:
+  exports:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install render dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y openscad xvfb
+          python -m pip install trimesh
+      - name: Generate missing exports (preserve old revisions)
+        run: python scripts/render_cad_assets.py
+      - name: Validate exports
+        run: python scripts/verify_cad_assets.py
+      - name: Commit generated artifacts to source branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add mechanics/exports
+          if ! git diff --cached --quiet; then
+            git commit -m "cad: add generated preview and meshes [skip ci]"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+  verify:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Confirm all CAD exports are committed
+        run: python scripts/verify_cad_assets.py
+      - name: Protect versioned sources and exports
+        run: |
+          python - <<'PY'
+          import subprocess,sys
+          subprocess.run(["git","fetch","origin", "${{ github.event.pull_request.base.ref }}"],check=True)
+          changed=subprocess.check_output(
+              ["git","diff","--name-status", "origin/${{ github.event.pull_request.base.ref }}...HEAD"],
+              text=True
+          )
+          errors=[]
+          for line in changed.splitlines():
+              cols=line.split("\t")
+              if cols[0].startswith(("M","D","R")):
+                  path=cols[-1]
+                  if path.startswith(("mechanics/cad/","mechanics/exports/")):
+                      errors.append(line)
+          if errors:
+              print("Existing CAD revisions are immutable:",*errors,sep="\n")
+              sys.exit(1)
+          print("Version preservation: PASS")
+          PY
