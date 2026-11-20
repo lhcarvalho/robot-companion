@@ -36,3 +36,10 @@ Acquire/import official dimensioned STEP of Waveshare board, camera and LCD draw
 4. Check open issues and PRs before choosing a task; claim a narrow task in an issue and use your own branch.
 5. Do not change approved architecture silently. Attach tests/evidence, update this status and open questions in the PR.
 6. No hardware fit claim without manufacturer drawings or measured artifact; no working firmware claim without logs.
+
+## Parallel-work integration — 2026-11-20
+- **Mechanical PR #9 merged:** `mechanics/MECHANICAL_INTERFACE_AUDIT.md` and `mechanics/check_envelope.py`. Nominal cavity arithmetic validated; manufacturer STEP could not be downloaded/imported here. **Issue #5 remains open.**
+- **Electrical PR #10 merged:** `electronics/INTERFACE_MATRIX.md` and `electronics/POWER_BUDGET.csv`. Wiring GPIO pin numbers and load currents explicitly UNKNOWN. **Issue #6 remains open.**
+- **Firmware PR #11 merged:** `firmware/` ESP-IDF scaffold for P4, safe-idle loop, `tests/SMOKE_TEST_MATRIX.md`. ESP-IDF unavailable in this execution; **NOT COMPILED / NOT RUN**. **Issue #7 remains open.**
+
+**Next owner actions:** vendor STEP/import and cable routing (A), J6 physical pinout and protected servo supply (B), compile scaffold with ESP-IDF and provide build log (C). Completion of PRs is partial progress, not completion of G1/G2/G3.

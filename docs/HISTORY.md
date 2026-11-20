@@ -23,3 +23,9 @@ No purchased part verification, STEP import, real fit, firmware bring-up, compil
 
 ## Updating this history
 Add dated, concise entries with linked commits/issues/PRs after substantive milestones. Product/architectural decisions belong in `DECISIONS.md`; operational readiness belongs in `STATUS.md`.
+
+## 2026-11-20 — Three parallel workstreams integrated
+- [PR #9](https://github.com/lhcarvalho/robot-companion/pull/9): first mechanical audit and envelope checker; dimensions remain provisional.
+- [PR #10](https://github.com/lhcarvalho/robot-companion/pull/10): electrical interface planning and unknown-current budget.
+- [PR #11](https://github.com/lhcarvalho/robot-companion/pull/11): uncompiled ESP-IDF P4 safe-idle scaffold and test matrix.
+- Issues [#5](https://github.com/lhcarvalho/robot-companion/issues/5), [#6](https://github.com/lhcarvalho/robot-companion/issues/6), [#7](https://github.com/lhcarvalho/robot-companion/issues/7) deliberately **remain open**; core validation tasks are not done.

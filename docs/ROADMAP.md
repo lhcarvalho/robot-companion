@@ -21,3 +21,6 @@ This is a **dependency-ordered**, not time-promised, plan. Gate completion requi
 - **Product/QA coordination:** integrate results, owner decisions, evidence and PRs.
 
 See [TASKS](TASKS.md) and [CONTRIBUTING](../CONTRIBUTING.md). Do not claim milestones completed based solely on file creation.
+
+## Workstreams checkpoint — 2026-11-20
+Three independent branches and PRs (#9 mechanical, #10 electrical, #11 firmware) merged partial deliverables. They did **not** pass G1 or G2: no board STEP import, no verified physical pinout, no currents measured and no firmware build performed. Continue the existing Issues #5–#7 in follow-up branches, preserving lane ownership.
