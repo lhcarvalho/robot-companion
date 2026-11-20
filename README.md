@@ -9,6 +9,7 @@ A modular hobby **AI companion robot** designed for a desk and, later, a detacha
 | Document | Purpose |
 |---|---|
 | [Product brief](docs/PROJECT_BRIEF.md) | Objective, user experience, product constraints and MVP success |
+| [Project history](docs/HISTORY.md) | Chronology, completed PRs, what has NOT been done |
 | [Current status / resume guide](docs/STATUS.md) | **Where we are, what is real and next action** |
 | [Roadmap](docs/ROADMAP.md) | Gated milestones and priorities |
 | [Decision register](docs/DECISIONS.md) | Selected vs provisional vs unresolved choices |
