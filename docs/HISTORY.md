@@ -29,3 +29,8 @@ Add dated, concise entries with linked commits/issues/PRs after substantive mile
 - [PR #10](https://github.com/lhcarvalho/robot-companion/pull/10): electrical interface planning and unknown-current budget.
 - [PR #11](https://github.com/lhcarvalho/robot-companion/pull/11): uncompiled ESP-IDF P4 safe-idle scaffold and test matrix.
 - Issues [#5](https://github.com/lhcarvalho/robot-companion/issues/5), [#6](https://github.com/lhcarvalho/robot-companion/issues/6), [#7](https://github.com/lhcarvalho/robot-companion/issues/7) deliberately **remain open**; core validation tasks are not done.
+
+## 2026-11-20 — Automated outputs and cross-compilation
+- [PR #15](https://github.com/lhcarvalho/robot-companion/pull/15): automatic versioned PNG/STL/GLB exports; nine V01 assets committed to `mechanics/exports/` and immutable CAD checks.
+- [PR #16](https://github.com/lhcarvalho/robot-companion/pull/16): baseline ESP32-P4 firmware successfully cross-compiled with ESP-IDF v5.5 in [GitHub Actions](https://github.com/lhcarvalho/robot-companion/actions/runs/44801017376); no hardware was used.
+- [PR #17](https://github.com/lhcarvalho/robot-companion/pull/17): geometric 2D fit calculations and acceptance plan, no STEP import nor verified moving FFC.
