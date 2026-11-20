@@ -16,6 +16,9 @@ on:
       - 'scripts/render_cad_assets.py'
       - 'scripts/verify_cad_assets.py'
       - '.github/workflows/cad-exports.yml'
+concurrency:
+  group: cad-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
@@ -43,6 +46,8 @@ jobs:
           git add mechanics/exports
           if ! git diff --cached --quiet; then
             git commit -m "cad: add generated preview and meshes [skip ci]"
+            git fetch origin "${GITHUB_REF_NAME}"
+            git rebase "origin/${GITHUB_REF_NAME}"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
   verify:
