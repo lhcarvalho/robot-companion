@@ -11,7 +11,7 @@ cc -std=c11 -Wall -Wextra -Werror -pedantic -fsanitize=undefined -fno-omit-frame
 /tmp/test_motion_safety
 ```
 
-As of 2026-11-20, native test executed locally using GCC with AddressSanitizer and UBSan; **18 assertions passed**. CI runs UBSan by default. Full ESP-IDF build, hardware and real sensors have not been tested.
+As of 2026-11-20, native test executed locally using GCC with AddressSanitizer and UBSan; **19 assertions passed**. CI runs UBSan by default. Full ESP-IDF build, hardware and real sensors have not been tested.
 
 Guardrail API: all safety inputs start unknown/unready, requests are bounded to ±300/1000 in arbitrary per-mille units and <=1000 ms; every new request must be explicitly accepted; missing command/failed sensor supply/latching emergency stop outputs zero. `reset_fault` needs all safety inputs clear, and must not automatically start motion.
 
