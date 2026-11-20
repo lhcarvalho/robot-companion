@@ -1,0 +1,21 @@
+name: Native motion safety tests
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  native-safety:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile with warnings and UBSan
+        run: |
+          cc -std=c11 -Wall -Wextra -Werror -pedantic -fsanitize=undefined -fno-omit-frame-pointer \
+            -I firmware/components/motion_safety/include \
+            firmware/components/motion_safety/motion_safety.c tests/native/test_motion_safety.c \
+            -o /tmp/test_motion_safety
+      - name: Execute
+        run: /tmp/test_motion_safety
