@@ -21,6 +21,11 @@
 - Servo safe operating torque, head mass and power budget are unknown.
 - LCD, camera, servos, power parts and speakers have not been marked ordered or received.
 
+## Parallel tasks opened
+- [#5 — Mechanical STEP + moving-neck fit](https://github.com/lhcarvalho/robot-companion/issues/5)
+- [#6 — Electrical pinout + power + BOM](https://github.com/lhcarvalho/robot-companion/issues/6)
+- [#7 — ESP-IDF firmware scaffold + smoke tests](https://github.com/lhcarvalho/robot-companion/issues/7)
+
 ## Current next action
 Acquire/import official dimensioned STEP of Waveshare board, camera and LCD drawings; determine actual 3D collision-free placement and moving-cable route, while an independent electrical agent verifies GPIO/power allocation. See [ROADMAP](ROADMAP.md) and [TASKS](TASKS.md).
 
