@@ -27,6 +27,6 @@ int main(void) {
   motion_safety_tick(&s, 40); assert(s.armed);
   motion_safety_tick(&s, 58); assert(s.armed);
   motion_safety_tick(&s, 59); assert(!s.armed);
-  puts("motion_safety: all 18 checks passed");
+  puts("motion_safety: all 19 checks passed");
   return 0;
 }
