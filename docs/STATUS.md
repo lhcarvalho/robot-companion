@@ -1,8 +1,8 @@
 # Project status — 2026-11-20
 
 **Phase:** concept engineering / packaging feasibility, **NOT** assembly-ready.
-**Last merged technical milestone:** desk internal packaging V0.1 (PR #4).
-**No physical component installation, electrical bench test, validated complete CAD assembly, firmware compilation, motor calibration, or printed enclosure is recorded in this repository.** If any happened elsewhere, require evidence before updating status.
+**Last merged technical milestones:** versioned CAD exports + CI (PR #15), ESP-IDF cross-compile CI (PR #16), 2D geometry checks (PR #17).
+**No physical component installation, electrical bench test, validated complete CAD assembly, motor calibration, or printed enclosure is recorded in this repository. The baseline firmware DOES compile in GitHub Actions for ESP32-P4; physical bring-up is still untested.** If any happened elsewhere, require evidence before updating status.
 
 ## What was completed
 | PR | Content | State | Evidence |
@@ -42,7 +42,14 @@ Acquire/import official dimensioned STEP of Waveshare board, camera and LCD draw
 - **Electrical PR #10 merged:** `electronics/INTERFACE_MATRIX.md` and `electronics/POWER_BUDGET.csv`. Wiring GPIO pin numbers and load currents explicitly UNKNOWN. **Issue #6 remains open.**
 - **Firmware PR #11 merged:** `firmware/` ESP-IDF scaffold for P4, safe-idle loop, `tests/SMOKE_TEST_MATRIX.md`. ESP-IDF unavailable in this execution; **NOT COMPILED / NOT RUN**. **Issue #7 remains open.**
 
-**Next owner actions:** vendor STEP/import and cable routing (A), J6 physical pinout and protected servo supply (B), compile scaffold with ESP-IDF and provide build log (C). Completion of PRs is partial progress, not completion of G1/G2/G3.
+**Next owner actions:** vendor STEP/import and cable routing (A), pinout and protected servo supply (B), then flash/bench test and camera/LCD/audio integration (C). Baseline cross-compilation passed, but does not complete G1/G2/G3.
 
 ## Governance update — 2026-11-20
 Repository visibility confirmed **public** through GitHub API. **Superseded governance note:** project-owner-authorized agents operating under `lhcarvalho` may review and merge routine PRs after checks. Other accounts may open PRs but should have no write/merge rights. This is a process rule, not proof of enforced branch protection. Firmware motion-safety PR #13 was merged after successful CI; ESP-IDF hardware integration remains untested and issue #7 stays open.
+
+## Verified checkpoint — 2026-11-20 (PRs #15–#17)
+- **CAD #15**: GitHub Actions generated and committed 3 PNG + 3 STL + 3 GLB for the V01 models. Preview and file-preservation checks passed. See `mechanics/exports/`, `docs/CAD_ASSET_POLICY.md` and `docs/MECHANICAL_INDEX.md`.
+- **Firmware #16**: ESP-IDF v5.5 / esp32p4 cross-compile passed in GitHub Actions [run 44801017376](https://github.com/lhcarvalho/robot-companion/actions/runs/44801017376). No flash or bench test.
+- **Mechanical #17**: added head 2D envelope calculation and assembly acceptance plan. No vendor STEP import, moving-cable fatigue test or confirmed 3D fit. Issue #5 remains open.
+- **Electrical #6**: exact pin/rail verification and regulated servo power still open; do not wire against provisional assignments.
+- **All CAD assets remain exploratory**, not validated printable parts. Next: physical board models, reliable CSI FFC neck design, GPIO/power engineering and actual hardware bring-up.
