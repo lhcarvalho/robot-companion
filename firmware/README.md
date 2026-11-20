@@ -1,6 +1,6 @@
 # ESP32-P4 firmware scaffold (issue #7)
 
-**Phase:** no-hardware smoke-test scaffold. **UNCOMPILED / NOT RUN** in this execution. Nothing in this directory proves peripheral hardware works.
+**Phase:** safe-idle scaffold **compiled successfully for ESP32-P4 in GitHub Actions** using ESP-IDF v5.5 (PR #16; run [44801017376](https://github.com/lhcarvalho/robot-companion/actions/runs/44801017376)). **Not flashed or bench-tested:** no camera, display, motor, audio or C6 integration is proven.
 
 ## Target
 - Board: Waveshare ESP32-P4-Module-DEV-KIT / P4+C6.
