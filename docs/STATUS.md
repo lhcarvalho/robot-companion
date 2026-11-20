@@ -1,7 +1,7 @@
 # Project status — 2026-11-20
 
 **Phase:** concept engineering / packaging feasibility, **NOT** assembly-ready.
-**Last merged technical milestone:** desk internal packaging V0.1 (PR #4).
+**Last merged technical milestones:** versioned CAD exports + CI (PR #15), ESP-IDF cross-compile CI (PR #16), 2D geometry checks (PR #17).
 **No physical component installation, electrical bench test, validated complete CAD assembly, firmware compilation, motor calibration, or printed enclosure is recorded in this repository.** If any happened elsewhere, require evidence before updating status.
 
 ## What was completed
