@@ -25,7 +25,7 @@
 - No external LLM/network dependency for motor safety; enforce failsafe locally. Sensitive child-related camera data should be opt-in and stay local by default.
 
 ## Execution policy
-- If tasked with implementation, make a small scoped branch and PR. **Repository is public; all merges are HUMAN-ONLY by GitHub user `lhcarvalho`. AI agents MUST NOT merge PRs, approve their own PRs or push directly to `main`, even if connector permissions technically permit it.**
+- If tasked with implementation, make a small scoped branch and PR. **Public repository: project-owner-authorized agents operating through GitHub identity `lhcarvalho` MAY review and merge PRs autonomously after applicable checks and conflict review. Other GitHub users may view, fork, and open PRs but MUST NOT receive merge/write permission. No agent may push directly to `main` or bypass protections.**
 - Document specific tests run and failures honestly. If hardware/tools unavailable, state "not tested" and leave validation gate open.
 - Update docs where behavior/decisions changed, preferably via coordinator to avoid 3-agent merge conflicts.
 - Respect lanes and issue ownership in `docs/TASKS.md`; ask only when a truly new product decision needs owner input.
