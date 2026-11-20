@@ -4,7 +4,7 @@ This is a **dependency-ordered**, not time-promised, plan. Gate completion requi
 
 | Gate | Scope | Definition of done | Current |
 |---|---|---|---|
-| G0 Context | Repo documentation, inventory, workflow, task ownership | New agent can continue without chat history | In progress as of this documentation PR |
+| G0 Context | Repo documentation, inventory, workflow, task ownership | New agent can continue without chat history | Created in documentation PR; confirm after merge |
 | G1 Hardware interface validation | Exact board/camera/LCD mechanical docs, IO map, power, speaker SKU | Vendor evidence and mechanical package; compatibility matrix; purchase-ready provisional BOM | Open |
 | G2 Bench bring-up | P4+C6, screen SPI, CSI camera, audio and Wi-Fi | Versioned ESP-IDF build, logs, photos/measurements and reproducible steps | Not started |
 | G3 Head/neck engineering | Collision-checked CAD, servos, cable routing, brackets | Dimensioned files, torque/CoM analysis, cyclic cable stress plan | Mockups only |
