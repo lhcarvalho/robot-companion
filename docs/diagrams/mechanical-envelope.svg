@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="650" viewBox="0 0 1040 650" role="img" aria-label="Conceptual mechanical envelope robot companion">
+<style>text{font-family:Arial,sans-serif;fill:#12253a}.title{font-size:30px;font-weight:bold}.sub{font-size:16px;fill:#526275}.small{font-size:15px}.h{font-size:19px;font-weight:bold}.outline{fill:#e8edf2;stroke:#617084;stroke-width:3}.part{fill:#c4d6e8;stroke:#52799b;stroke-width:2}.line{stroke:#4a5d70;stroke-width:2;fill:none}.warn{font-size:14px;fill:#b35f27}</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10z" fill="#4a5d70"/></marker></defs>
+<rect width="1040" height="650" fill="#fff"/>
+<text x="42" y="50" class="title">Robot Companion — preliminary mechanical envelope</text>
+<text x="42" y="82" class="sub">Front / side conceptual views. Dimensions proposed, component thickness/connector envelopes not validated.</text>
+<g transform="translate(180 110)">
+<rect x="0" y="0" width="252" height="204" rx="37" class="outline"/>
+<rect x="42" y="88" width="169" height="104" rx="7" class="part"/>
+<rect x="68" y="99" width="117" height="88" rx="4" fill="#162638"/>
+<circle cx="126" cy="45" r="17" fill="#233a51" stroke="#89a6c3" stroke-width="3"/>
+<rect x="-24" y="230" width="300" height="145" rx="35" class="outline"/>
+<rect x="98" y="204" width="56" height="34" rx="11" fill="#677b90"/>
+<rect x="12" y="378" width="276" height="31" rx="13" class="outline"/>
+<text x="126" y="426" text-anchor="middle" class="small">Desk front view</text>
+<path d="M0 -16 H252 M-18 0 V204" class="line"/>
+<text x="126" y="-21" text-anchor="middle" class="small">Head 105 mm (proposed)</text>
+<text x="-33" y="106" text-anchor="middle" transform="rotate(-90 -33 106)" class="small">85 mm</text>
+<text x="126" y="457" text-anchor="middle" class="warn">Dimensions not frozen</text>
+</g>
+<g transform="translate(620 127)">
+<rect x="30" y="0" width="145" height="204" rx="33" class="outline"/>
+<rect x="56" y="48" width="90" height="45" rx="5" fill="#9bc3e1" stroke="#507aa4" stroke-width="2"/>
+<rect x="14" y="238" width="192" height="148" rx="22" class="outline"/>
+<rect x="70" y="205" width="66" height="36" rx="9" fill="#6f8295"/>
+<rect x="26" y="388" width="169" height="28" rx="12" class="outline"/>
+<text x="110" y="434" text-anchor="middle" class="small">Side concept</text>
+<path d="M30 -15 H175" class="line"/><text x="103" y="-22" text-anchor="middle" class="small">60 mm head depth</text>
+<text x="220" y="150" class="small">LCD + camera</text>
+<path d="M210 152 L173 72" class="line"/>
+<text x="220" y="268" class="small">Neck 2-DOF</text>
+<path d="M210 270 L160 229" class="line"/>
+<text x="220" y="345" class="small">P4 in fixed torso</text>
+<path d="M210 348 L155 328" class="line"/>
+</g>
+<text x="44" y="590" class="sub">Nominal height target 150 mm. Torso 125×100×61 and P4 95×70×18 are provisional proxies.</text>
+<text x="44" y="620" class="warn">DO NOT PRINT OR PURCHASE FROM THIS SCHEMATIC. Use vendor STEP and cable/servo fit checks.</text>
+</svg>

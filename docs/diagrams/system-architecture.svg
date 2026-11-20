@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="680" viewBox="0 0 1100 680" role="img" aria-label="Robot Companion system architecture schematic">
+<style>text{font-family:Arial,sans-serif;fill:#14243a}.title{font-size:30px;font-weight:bold}.sub{font-size:16px;fill:#536174}.head{font-size:21px;font-weight:bold}.txt{font-size:15px}.card{fill:#fff;stroke:#7c8da1;stroke-width:2}.ai{fill:#f0f6fc;stroke:#5188bc;stroke-width:2}.safe{fill:#f6fbf4;stroke:#518d5c;stroke-width:2}.line{stroke:#64748b;stroke-width:3;fill:none;marker-end:url(#arr)}.note{font-size:13px;fill:#576477}</style>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10z" fill="#64748b"/></marker></defs>
+<rect width="1100" height="680" fill="#f8fafc"/>
+<text x="45" y="51" class="title">Robot Companion — conceptual system architecture</text><text x="45" y="78" class="sub">P4 + C6, offline-first safety; external AI optional. Not an electrical wiring diagram.</text>
+<rect x="370" y="132" width="345" height="385" rx="18" class="card"/><text x="542" y="164" class="head" text-anchor="middle">ESP32-P4 / ESP-IDF</text>
+<rect x="398" y="192" width="288" height="78" rx="9" class="ai"/><text x="542" y="220" class="txt" text-anchor="middle">Local vision / face / behavior</text><text x="542" y="245" class="note" text-anchor="middle">Model compatibility must be verified</text>
+<rect x="398" y="289" width="288" height="70" rx="9" class="card"/><text x="542" y="317" class="txt" text-anchor="middle">SPI LCD / CSI camera / audio</text><text x="542" y="340" class="note" text-anchor="middle">Concurrent runtime not yet tested</text>
+<rect x="398" y="377" width="288" height="105" rx="9" class="safe"/><text x="542" y="406" class="txt" text-anchor="middle">Local deterministic safety</text><text x="542" y="429" class="txt" text-anchor="middle">Watchdog / physical stops</text><text x="542" y="451" class="note" text-anchor="middle">No LLM or cloud dependency</text>
+<rect x="50" y="183" width="245" height="83" rx="12" class="card"/><text x="172" y="214" class="head" text-anchor="middle">OV5647 CSI camera</text><text x="172" y="241" class="note" text-anchor="middle">Moving head; FFC risk OPEN</text>
+<rect x="50" y="307" width="245" height="83" rx="12" class="card"/><text x="172" y="338" class="head" text-anchor="middle">ILI9341 SPI face</text><text x="172" y="365" class="note" text-anchor="middle">2.4 inch; pinmap OPEN</text>
+<rect x="50" y="431" width="245" height="83" rx="12" class="card"/><text x="172" y="462" class="head" text-anchor="middle">Audio and sensors</text><text x="172" y="489" class="note" text-anchor="middle">Board microphone; speaker TBD</text>
+<path d="M295 225 H370 M295 350 H370 M295 473 H370" class="line"/>
+<rect x="795" y="132" width="255" height="95" rx="12" class="card"/><text x="922" y="162" class="head" text-anchor="middle">ESP32-C6 link</text><text x="922" y="189" class="txt" text-anchor="middle">Wi-Fi / BLE</text><path d="M715 182 L795 182" class="line"/>
+<rect x="795" y="289" width="255" height="102" rx="12" class="ai"/><text x="922" y="323" class="head" text-anchor="middle">Optional AI backend</text><text x="922" y="349" class="txt" text-anchor="middle">PC RTX 3080 / cloud</text><text x="922" y="373" class="note" text-anchor="middle">Speech, LLM, complex vision</text>
+<path d="M922 227 V289" class="line"/>
+<rect x="795" y="440" width="255" height="78" rx="12" class="safe"/><text x="922" y="470" class="head" text-anchor="middle">Motors / servos</text><text x="922" y="494" class="note" text-anchor="middle">Protected supply; limits TBD</text><path d="M715 433 H795" class="line"/>
+<text x="45" y="584" class="sub">Desk first: pan/tilt servos. Mobile later: wheel motors, encoders, cliff/bumper sensors, protected battery.</text>
+<text x="45" y="614" class="note">Source: docs/ARCHITECTURE.md | Status: conceptual, not wired, compiled or bench-tested | Rev: 2026-11-20</text>
+</svg>
