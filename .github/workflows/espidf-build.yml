@@ -1,0 +1,26 @@
+name: ESP-IDF firmware build
+on:
+  pull_request:
+    paths:
+      - 'firmware/**'
+      - '.github/workflows/espidf-build.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'firmware/**'
+      - '.github/workflows/espidf-build.yml'
+permissions:
+  contents: read
+jobs:
+  esp32-p4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile ESP32-P4 baseline
+        uses: espressif/esp-idf-ci-action@v1
+        with:
+          esp_idf_version: v5.5
+          target: esp32p4
+          path: firmware
