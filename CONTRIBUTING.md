@@ -31,3 +31,7 @@ CI should validate Markdown links, CSV format, OpenSCAD syntax and ESP-IDF firmw
 
 ## Public contribution policy (effective 2026-11-20)
 The repository is public. Anyone can read or fork and submit a PR. Review and merge are reserved for **GitHub account @lhcarvalho, including agents explicitly authorized by that account**. Other GitHub accounts can submit PRs but must not get write/merge permission. Before an automated merge, check CI, conflicts and scope; with failing checks, high-risk/security-sensitive changes or missing validation, do not merge. Never claim branch protection or CODEOWNERS are configured unless verified in GitHub settings. GitHub's review system generally disallows formal approval of one's own PR; owner-authorized agents may merge without self-approval only when repository rules allow it.
+
+
+## OpenSCAD contribution requirements
+A new CAD revision must have a **new filename** (`_v01`, `_v02`, etc.); do not replace or delete older version files. Every revision must include PNG, STL and GLB assets in `mechanics/exports/`, with the same stem. Update `docs/MECHANICAL_INDEX.md` and clearly state whether physical fit and vendor dimensions were validated. See [docs/CAD_ASSET_POLICY.md](docs/CAD_ASSET_POLICY.md). CI validates asset presence/format and prevents modifications of archived SCAD/exports.

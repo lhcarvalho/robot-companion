@@ -34,3 +34,7 @@
 
 ## Current task suggestion
 Prioritize G1: board STEP + physical connectors, moving camera FFC route, electrical pin map and power. Consult live issues and PRs before choosing the first available item.
+
+
+## Mandatory CAD versioning and mobile previews
+Whenever creating or changing a model in `mechanics/cad/`, **do not overwrite older versions**: use the next sequential `_vNN.scad` filename. Generate and commit `mechanics/exports/<stem>.png`, `<stem>.stl` and `<stem>.glb` for each source revision. Use `python scripts/render_cad_assets.py`, update `docs/MECHANICAL_INDEX.md`, and comply with [CAD_ASSET_POLICY](docs/CAD_ASSET_POLICY.md). The GitHub Actions pipeline auto-generates missing files on agent branches and checks PRs; never merge if required exports are missing. Conceptual STL ≠ validated printable part.
