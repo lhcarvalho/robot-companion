@@ -39,3 +39,5 @@ Every source `mechanics/cad/<stem>.scad` must have version-matched binary previe
 | Desk v01 | [PNG](../mechanics/exports/desk_internal_layout_v01.png) | [GLB](../mechanics/exports/desk_internal_layout_v01.glb) | [STL](../mechanics/exports/desk_internal_layout_v01.stl) | Proxy; not print-ready |
 
 To regenerate missing versions locally: `python scripts/render_cad_assets.py`. GitHub Actions generates/commits missing exports on CAD agent branches. If the pipeline cannot push due to settings, do not merge until files exist on the PR branch.
+
+**Export verification (2026-11-20):** Nine initial binary assets (`.png`, `.stl`, `.glb`) were generated and added to this branch by the CAD GitHub Actions job. These are concept-model exports, not manufacturing-approved files.
