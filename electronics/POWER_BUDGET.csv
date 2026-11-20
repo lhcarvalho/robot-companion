@@ -1,0 +1,8 @@
+load,rail,typical_current_mA,peak_current_mA,source,status,notes
+P4+C6 development board,5V,UNKNOWN,UNKNOWN,https://docs.waveshare.com/ESP32-P4-Module-DEV-KIT,needs-measurement,Include Wi-Fi and video peak
+ILI9341 LCD module,3.3V,UNKNOWN,UNKNOWN,https://www.waveshare.com/2.4inch-lcd-module.htm,needs-datasheet,Verify backlight rail/current and source capacity
+OV5647 camera,board supplied CSI rail,UNKNOWN,UNKNOWN,https://www.waveshare.com/rpi-camera-b.htm,needs-measurement,Host regulator current budget
+MG90S pan,independent regulated 5V,UNKNOWN,UNKNOWN,https://towerpro.com.tw/product/mg90s-3/,needs-datasheet-and-measurement,Stall/start current must be measured
+MG90S tilt,independent regulated 5V,UNKNOWN,UNKNOWN,https://towerpro.com.tw/product/mg90s-3/,needs-datasheet-and-measurement,Stall/start current must be measured
+Speaker amplifier,board codec rail,UNKNOWN,UNKNOWN,https://docs.waveshare.com/ESP32-P4-Module-DEV-KIT,needs-measurement,8ohm 2W speaker target is audio power not DC current
+Regulator and protection losses,5V,UNKNOWN,UNKNOWN,,needs-design,Add startup margin and thermal dissipation
