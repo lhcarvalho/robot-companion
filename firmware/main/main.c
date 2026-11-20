@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include <stdbool.h>
 #include "esp_log.h"
 #include "esp_chip_info.h"
 #include "esp_idf_version.h"
