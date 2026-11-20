@@ -58,6 +58,8 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Confirm all CAD exports are committed
         run: python scripts/verify_cad_assets.py
       - name: Protect versioned sources and exports
