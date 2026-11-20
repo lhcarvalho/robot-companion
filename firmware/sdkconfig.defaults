@@ -1,0 +1,2 @@
+# Robot Companion baseline — no physical GPIO allocations or motors enabled.
+CONFIG_IDF_TARGET="esp32p4"
