@@ -6,7 +6,7 @@
 - Before starting: check current issues/PRs, comment on issue with intended file ownership and blockers. Avoid overlapping edits.
 - Keep PR small and scoped; reference its issue; include **what changed / sources / validation / assumptions / risks / follow-up**.
 - **Never force-push to main; never direct commit to main as an agent.** Merge PRs after checks and conflicts have been resolved.
-- The project owner authorized routine PR merges without individual confirmation; this does not mean merging failing, conflicting, destructive or unverified work.
+- **Only `lhcarvalho` reviews/approves and merges PRs. Agents must not call the merge endpoint or bypass branch protection, even when GitHub credentials technically allow it.** External contributors should fork and propose PRs, not receive write access.
 
 ## Parallel-agent protocol
 1. Split into mechanical, electrical/BOM, firmware/test lanes, coordinate via issues.
@@ -28,3 +28,6 @@
 
 ## Automation later
 CI should validate Markdown links, CSV format, OpenSCAD syntax and ESP-IDF firmware when that code exists. Branch protection, CODEOWNERS and required reviews can be added when collaborators grow; do not claim these are currently enabled.
+
+## Public contribution policy (effective 2026-11-20)
+The repository is public. Anyone can read or fork and submit a PR. Review and merge are **reserved for human owner @lhcarvalho**. Never claim CODEOWNERS/branch protection are enabled until verified in GitHub settings. Do not treat a mergeable PR as permission for an AI agent to merge it.
