@@ -11,6 +11,11 @@
 
 Coordinator/maintainer owns **`README.md`, `AGENTS.md`, `docs/STATUS.md`, `docs/DECISIONS.md`, `docs/ROADMAP.md`, `docs/OPEN_QUESTIONS.md`** and reconciles contributions. Other agents may propose updates to these in PR but must keep changes small and flag potential merge conflicts.
 
+## Active independent starter issues
+- [#5 Mechanical](https://github.com/lhcarvalho/robot-companion/issues/5)
+- [#6 Electrical](https://github.com/lhcarvalho/robot-companion/issues/6)
+- [#7 Firmware](https://github.com/lhcarvalho/robot-companion/issues/7)
+
 ## Ready tasks
 - A1: obtain exact Waveshare P4 board STEP/drawings; replace torso placeholder; document port and hole clearance.
 - A2: obtain exact camera/lcd fixing dimensions; design first collision-aware head layout.
