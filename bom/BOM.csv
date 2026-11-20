@@ -1,0 +1,13 @@
+id,subsystem,component,model_or_sku,qty,selection_status,procurement_status,verification,known_dimensions_mm,source,notes
+HW-001,compute,P4+C6 development board,Waveshare ESP32-P4-Module-DEV-KIT base 30560 or kit A 30772,1,candidate,not-recorded,manufacturer-documented-envelope-not-verified,UNKNOWN,https://docs.waveshare.com/ESP32-P4-Module-DEV-KIT,Kit A includes OV5647 camera and matching cable
+HW-002,display,24-inch-displayed-as-2.4inch SPI TFT,Waveshare 2.4inch LCD Module ILI9341 SKU 18366,1,candidate,not-recorded,nominal-spec-available,70.5x43.3 PCB,https://www.waveshare.com/2.4inch-lcd-module.htm,Actual visible area 48.96x36.72 mm; backlight and pins TBD
+HW-003,vision,CSI camera,Waveshare RPi Camera (B) OV5647,1,candidate,not-recorded,nominal-spec-available,32x32 PCB,https://www.waveshare.com/rpi-camera-b.htm,Exact lens and FFC geometry TBD
+HW-004,neck,Metal gear microservo,TowerPro MG90S genuine,2,candidate,not-recorded,torque-pending,22.8x12.2x28.5 body,https://towerpro.com.tw/product/mg90s-3/,Servo mass and dimension are vendor values not measured
+HW-005,audio,Speaker 8ohm 2W,EXACT SKU TBD,1,open,not-recorded,not-selected,UNKNOWN,https://docs.waveshare.com/ESP32-P4-Module-DEV-KIT,Mount and connector required
+HW-006,power,Protected 5V servo rail regulator,EXACT SKU TBD,1,open,not-recorded,not-selected,UNKNOWN,,Not from MCU 3.3V rail
+HW-007,mechanics,Neck bearings horns screws and inserts,EXACT SKUs TBD,1,open,not-recorded,not-selected,UNKNOWN,,Await fit and head weight
+HW-008,mechanics,Printed head shell,Custom CAD TBD,1,concept,not-recorded,proxy-only,105x85x60 proposed,,No print-ready parts yet
+HW-009,mechanics,Desk torso and foot,Custom CAD TBD,1,concept,not-recorded,proxy-only,125x100x61 torso proposed,,Board size unverified
+HW-010,mobile,Wheel motors encoders and drive electronics,EXACT SKUs TBD,1,deferred,not-recorded,not-selected,UNKNOWN,,Mobile phase only
+HW-011,mobile,ToF cliff and bumper sensors,EXACT SKUs TBD,1,deferred,not-recorded,not-selected,UNKNOWN,,Mobile phase only
+HW-012,mobile,Protected battery and charging,EXACT SKU TBD,1,deferred,not-recorded,not-selected,UNKNOWN,,Mobile phase only
