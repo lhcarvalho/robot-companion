@@ -40,3 +40,6 @@ flowchart TB
 Start with a **bench stand/interposer**, an external regulated current-limited power source and an accessible OFF switch. Do not use unprotected Li-ion packs or low-current USB breakout boards to feed stalled servos.
 
 No battery purchase should be marked required for G2 bench bring-up.
+
+## Coupling engineering direction — 2026-11-21
+MVP candidate: mechanical guided slide + positive latch **and separately accessible keyed/latching manual harness plug**. See [modular coupling V01](../mechanics/BASE_COUPLING_CONCEPT_V01.md) and [conceptual SVG](../docs/diagrams/base-coupling-concept-v01.svg). Current is a requirements/concept stage: connector family, dimensions, rail ratings and wiring not selected or validated. A Micro-Fit 3.0 harness is a **manual low-cycle candidate only** (manufacturer durability typically 30 mating cycles); frequent base swaps demand independent high-cycle connector engineering. Keep base wheel motor traction power inside the base, not through core harness.
