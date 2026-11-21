@@ -43,3 +43,6 @@
 - Complete BOM, reproducible build instructions and annotated CAD updated with actual measurements.
 
 See [STATUS](STATUS.md), [ROADMAP](ROADMAP.md), [DECISIONS](DECISIONS.md), [OPEN_QUESTIONS](OPEN_QUESTIONS.md), [ARCHITECTURE](ARCHITECTURE.md).
+
+## Modular power / base architecture (decision 2026-11-21)
+The shared head+P4 electronics assembly must operate from an externally powered bench stand for prototyping. Main energy storage belongs exclusively in the interchangeable desk/mobile base, not in the shared core. Different bases may have different batteries, with the same protected regulated output and a defined mechanical connector. Live swapping is not part of the first prototype. See [ADR-001](adr/ADR-001-modular-base-power.md).
