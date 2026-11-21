@@ -41,4 +41,4 @@ Add dated, concise entries with linked commits/issues/PRs after substantive mile
 - [#21](https://github.com/lhcarvalho/robot-companion/pull/21): P6 40-contact candidate mapping with reserved/shared lines; physical pinout still unverified.
 - [#20](https://github.com/lhcarvalho/robot-companion/pull/20): ESP-IDF SPI ILI9341 adapter compiled in CI with hardware disabled at boot.
 - [#23](https://github.com/lhcarvalho/robot-companion/pull/23): kit-A bundle details, safe-power checklist and BOM structure checks.
-- [#24](https://github.com/lhcarvalho/robot-companion/pull/24): desk V02 concept using STEP-derived bounding box, pending CAD exports/merge at this checkpoint.
+- [#24](https://github.com/lhcarvalho/robot-companion/pull/24): desk V02 concept using STEP-derived bounding box, PNG/STL/GLB generated and merged.
