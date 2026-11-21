@@ -1,0 +1,33 @@
+name: Manufacturer STEP assembly dimensions
+on:
+  push:
+    branches: ['agent/mech/issue-5-step-bbox-v01']
+    paths:
+      - 'mechanics/tools/**'
+      - '.github/workflows/step-dimensions.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  parse-step:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install STEP kernel
+        run: python -m pip install 'cadquery==2.6.1'
+      - name: Retrieve vendor archive and SHA
+        run: python mechanics/tools/fetch_waveshare_step.py
+      - name: Inspect STEP assembly with CadQuery / OCP
+        run: python mechanics/tools/analyze_waveshare_step.py
+      - name: Upload dimensional evidence (no vendor model)
+        uses: actions/upload-artifact@v4
+        with:
+          name: waveshare-p4-step-bounding-box
+          path: |
+            mechanics/vendor_audit/manifest.json
+            mechanics/vendor_audit/bbox.json
+          retention-days: 30
