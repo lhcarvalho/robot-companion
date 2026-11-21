@@ -1,7 +1,7 @@
 # Project status — 2026-11-20
 
 **Phase:** concept engineering / packaging feasibility, **NOT** assembly-ready.
-**Last merged technical milestones:** official Waveshare STEP retrieved and measured (PRs #19/#22), preliminary P6 pin map (#21), SPI ILI9341 driver compiles (#20), Waveshare kit BOM/first power checklist (#23). CAD desk V02 (#24) pending generated exports.
+**Last merged technical milestones:** official Waveshare STEP retrieved and measured (PRs #19/#22), preliminary P6 pin map (#21), SPI ILI9341 driver compiles (#20), Waveshare kit BOM/first power checklist (#23). CAD desk V02 (#24) merged with matching PNG/STL/GLB generated and verified.
 **No physical component installation, electrical bench test, validated complete CAD assembly, motor calibration, or printed enclosure is recorded in this repository. The baseline firmware DOES compile in GitHub Actions for ESP32-P4; physical bring-up is still untested.** If any happened elsewhere, require evidence before updating status.
 
 ## What was completed
@@ -60,6 +60,6 @@ Repository visibility confirmed **public** through GitHub API. **Superseded gove
 - PR [#21](https://github.com/lhcarvalho/robot-companion/pull/21): preliminary 40-pin P6 schematic contacts and provisional SPI/servo signals. Actual physical header orientation and GPIO collision checks remain open.
 - PR [#20](https://github.com/lhcarvalho/robot-companion/pull/20): `robot_display` ILI9341 driver compiled with ESP-IDF v5.5 on the P4; **no display was connected**. GPIO pin allocation and BL circuit unverified, driver only initializes on explicit call.
 - PR [#23](https://github.com/lhcarvalho/robot-companion/pull/23): BOM now records Waveshare KIT-A bundles camera/FFC and 8Ω 2W speaker, plus pre-power checklist and BOM CI.
-- PR [#24](https://github.com/lhcarvalho/robot-companion/pull/24): desk layout V02 uses measured STEP whole-assembly envelope and preserves V01. Merge **only after PNG/STL/GLB exports and CAD CI pass**.
+- PR [#24](https://github.com/lhcarvalho/robot-companion/pull/24): desk layout V02 uses measured STEP whole-assembly envelope and preserves V01; PNG/STL/GLB generated and PR merged.
 
 **Next technical priorities:** real board mounting holes/connector clearance, verified flex-rated CSI cable in moving neck, P6 physical pin-1 and power loads, then LCD/camera/audio bench tests. Issues #5/#6/#7 remain open. No physical hardware tests recorded.
