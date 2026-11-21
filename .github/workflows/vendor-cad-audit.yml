@@ -1,0 +1,25 @@
+name: Vendor mechanical CAD availability audit
+on:
+  push:
+    branches:
+      - 'agent/mech/**'
+    paths:
+      - 'mechanics/tools/fetch_waveshare_step.py'
+      - '.github/workflows/vendor-cad-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  vendor-cad-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch Waveshare CAD and record SHA-256/file inventory
+        run: python3 mechanics/tools/fetch_waveshare_step.py
+      - name: Upload metadata only (no vendor CAD redistribution)
+        uses: actions/upload-artifact@v4
+        with:
+          name: waveshare-cad-manifest
+          path: mechanics/vendor_audit/manifest.json
+          retention-days: 30
