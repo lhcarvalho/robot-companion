@@ -45,3 +45,6 @@ To regenerate missing versions locally: `python scripts/render_cad_assets.py`. G
 
 ## Manufacturer STEP verification — 2026-11-20
 The exact Waveshare ESP32-P4-Module-DEV-KIT STEP was downloaded and parsed by CadQuery on GitHub Actions; source ZIP SHA-256 and dimensional evidence in [Desk V02 notes](../mechanics/cad/DESK_INTERNAL_LAYOUT_V02.md). Bounding extents are **88.359 × 57.091 × 20.100 mm**. This does not establish connector mounting positions or 3D fit.
+
+## Base coupling concept — 2026-11-21
+[Modular base coupling concept V01](../mechanics/BASE_COUPLING_CONCEPT_V01.md) · [SVG 2D view](diagrams/base-coupling-concept-v01.svg). **Conceptual slide cradle/latch with manual plug**; no dimensioned print-ready CAD/mesh, real connector placement, tolerance or locking force claim. Existing V01/V02 CAD models unchanged. A subsequent mechanically measured CAD revision must be created as a new numbered `_vNN.scad` and exported with matched PNG/STL/GLB.
