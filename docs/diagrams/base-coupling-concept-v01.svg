@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-label="Conceptual modular robot coupling between core and powered base">
+<rect width="1200" height="680" fill="#f7f9fc"/>
+<text x="54" y="60" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#153047">Robot Companion — interchangeable base interface</text>
+<text x="54" y="93" font-family="Arial,sans-serif" font-size="19" fill="#53677a">Concept V01 • not to scale • no validated dimensions or connector pinout</text>
+<g font-family="Arial,sans-serif">
+<rect x="90" y="135" width="420" height="215" rx="35" fill="#dce9f7" stroke="#386a99" stroke-width="4"/>
+<rect x="220" y="157" width="156" height="120" rx="27" fill="#86b9d9" stroke="#386a99" stroke-width="3"/>
+<rect x="244" y="175" width="108" height="72" rx="12" fill="#153047"/><ellipse cx="278" cy="212" rx="12" ry="20" fill="#f1fafc"/><ellipse cx="317" cy="212" rx="12" ry="20" fill="#f1fafc"/>
+<text x="300" y="307" font-size="20" text-anchor="middle" fill="#153047">Reusable head + P4 electronics</text>
+<rect x="148" y="350" width="304" height="40" rx="12" fill="#6a9dbb" stroke="#386a99" stroke-width="3"/>
+<path d="M175 390 L175 425 M425 390 L425 425" stroke="#386a99" stroke-width="11"/>
+<text x="300" y="446" font-size="17" text-anchor="middle" fill="#2d567c">Core-side structural plate</text>
+<path d="M300 462 L300 510" stroke="#386a99" stroke-width="4" stroke-dasharray="8 7"/><path d="M291 500 L300 515 L309 500" fill="none" stroke="#386a99" stroke-width="4"/>
+<rect x="102" y="522" width="396" height="99" rx="22" fill="#e7f1e5" stroke="#358068" stroke-width="4"/>
+<path d="M135 542 L135 596 L460 596 L460 542" fill="none" stroke="#358068" stroke-width="13" stroke-linejoin="round"/>
+<rect x="265" y="525" width="70" height="18" rx="8" fill="#e3b04a" stroke="#a16a19" stroke-width="3"/>
+<text x="300" y="572" font-size="20" text-anchor="middle" fill="#245f4a">Slide cradle + positive latch</text>
+<text x="300" y="650" font-size="18" text-anchor="middle" fill="#245f4a">Interchangeable base (no cell in core)</text>
+<rect x="620" y="148" width="510" height="436" rx="28" fill="#fff" stroke="#b4c5d4" stroke-width="3"/>
+<text x="654" y="194" font-size="24" font-weight="700" fill="#153047">Manual-service connector — MVP</text>
+<rect x="656" y="221" width="188" height="82" rx="16" fill="#eff3f7" stroke="#7190aa" stroke-width="2"/><text x="750" y="253" font-size="19" text-anchor="middle" fill="#153047">Core cable plug</text><text x="750" y="280" font-size="15" text-anchor="middle" fill="#657684">keyed + latched</text>
+<path d="M844 262 L916 262" stroke="#2f698e" stroke-width="6"/><path d="M904 254 L917 262 L904 270" fill="none" stroke="#2f698e" stroke-width="5"/>
+<rect x="919" y="221" width="175" height="82" rx="16" fill="#e7f1e5" stroke="#358068" stroke-width="2"/><text x="1006" y="253" font-size="18" text-anchor="middle" fill="#235e4a">Base harness</text><text x="1006" y="279" font-size="15" text-anchor="middle" fill="#587d6d">regulators</text>
+<text x="655" y="345" font-size="18" fill="#153047">Rail/latch supports mechanical loads.</text>
+<text x="655" y="378" font-size="18" fill="#153047">Harness transmits protected power + data.</text>
+<text x="655" y="411" font-size="18" fill="#153047">Power off before unplugging any base.</text>
+<text x="655" y="448" font-size="18" fill="#153047">No USB + base dual feed until isolated.</text>
+<line x1="652" y1="467" x2="1093" y2="467" stroke="#cbd5e1" stroke-width="2"/>
+<text x="655" y="506" font-size="17" fill="#a45c16">Future self-docking version requires a HIGH-cycle</text>
+<text x="655" y="535" font-size="17" fill="#a45c16">rated safe connector, not the prototype plug.</text>
+</g></svg>

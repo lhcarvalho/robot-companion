@@ -41,3 +41,6 @@ Whenever creating or changing a model in `mechanics/cad/`, **do not overwrite ol
 
 ## New architecture constraint — modular power (ADR-001)
 The shared head/electronics core contains **no main battery**. Bench prototype uses cable/regulated source; desk and mobile base variants supply their own protected energy. No agent should embed a battery in the shared core, select an unvalidated connector, or treat charging while running/live hot-swapping as approved. Consult [ADR-001](docs/adr/ADR-001-modular-base-power.md) and [interface requirements](electronics/BASE_INTERFACE_V01.md). New geometry revisions must follow immutable CAD+PNG/STL/GLB rules.
+
+## Base attachment concept V01
+Read [mechanics/BASE_COUPLING_CONCEPT_V01.md](mechanics/BASE_COUPLING_CONCEPT_V01.md) before designing the interface. Initial concept is slide rails + positive latch + manually accessible keyed plug, *not* pogo/magnets or proven blind-mate. Molex Micro-Fit 3.0 typically has only 30 mating cycles; not a high-cycle base-change interface. No mechanical dimensions, current rating, final wiring or validated printable component are approved. Do not call the explanatory SVG printable CAD. Future _vNN SCAD must preserve old models and include generated PNG/STL/GLB.

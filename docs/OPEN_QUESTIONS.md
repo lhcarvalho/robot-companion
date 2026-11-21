@@ -32,3 +32,6 @@ Vendor mechanical drawing/STEP, firmware and logs from hardware tests, photograp
 
 ## Base power architecture decision (2026-11-21)
 Battery location is **decided**: interchangeable base, not the shared core. Connector model, regulated voltage/current, charging/power-path design, power-off swap process and base detection remain open. See [ADR-001](adr/ADR-001-modular-base-power.md) and [interface requirements](../electronics/BASE_INTERFACE_V01.md). Do **not** purchase a pack until peak loads are measured and mechanical allocation is established.
+
+## Coupling concept open validation (2026-11-21)
+A **slide cradle + mechanical latch + manual unplug harness** is the prototype direction (not electrically or mechanically approved). Remaining: exact rail section/location, strength/print tolerances, insertion/removal access, power rails/current, connector/harness choice (Micro-Fit typically 30 mating cycles, not high-cycle), exposed contact safety, ID/protocol and tip stability. See [mechanics concept](../mechanics/BASE_COUPLING_CONCEPT_V01.md).
