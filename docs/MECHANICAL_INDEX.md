@@ -36,8 +36,12 @@ Every source `mechanics/cad/<stem>.scad` must have version-matched binary previe
 |---|---|---|---|---|
 | Head v01 | [PNG](../mechanics/exports/head_layout_v01.png) | [GLB](../mechanics/exports/head_layout_v01.glb) | [STL](../mechanics/exports/head_layout_v01.stl) | Proxy; not print-ready |
 | Neck v01 | [PNG](../mechanics/exports/neck_kinematics_v01.png) | [GLB](../mechanics/exports/neck_kinematics_v01.glb) | [STL](../mechanics/exports/neck_kinematics_v01.stl) | Proxy; not print-ready |
+| **Desk v02 — current concept** | [PNG](../mechanics/exports/desk_internal_layout_v02.png) | [GLB](../mechanics/exports/desk_internal_layout_v02.glb) | [STL](../mechanics/exports/desk_internal_layout_v02.stl) | Official P4 STEP whole-assembly dimensions; mounting/port locations not yet aligned |
 | Desk v01 | [PNG](../mechanics/exports/desk_internal_layout_v01.png) | [GLB](../mechanics/exports/desk_internal_layout_v01.glb) | [STL](../mechanics/exports/desk_internal_layout_v01.stl) | Proxy; not print-ready |
 
 To regenerate missing versions locally: `python scripts/render_cad_assets.py`. GitHub Actions generates/commits missing exports on CAD agent branches. If the pipeline cannot push due to settings, do not merge until files exist on the PR branch.
 
 **Export verification (2026-11-20):** Nine initial binary assets (`.png`, `.stl`, `.glb`) were generated and added to this branch by the CAD GitHub Actions job. These are concept-model exports, not manufacturing-approved files.
+
+## Manufacturer STEP verification — 2026-11-20
+The exact Waveshare ESP32-P4-Module-DEV-KIT STEP was downloaded and parsed by CadQuery on GitHub Actions; source ZIP SHA-256 and dimensional evidence in [Desk V02 notes](../mechanics/cad/DESK_INTERNAL_LAYOUT_V02.md). Bounding extents are **88.359 × 57.091 × 20.100 mm**. This does not establish connector mounting positions or 3D fit.
