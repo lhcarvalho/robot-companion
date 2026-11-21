@@ -3,9 +3,9 @@
 ## Logical domains
 1. **Hardware P4** (ESP-IDF): CSI camera, SPI ILI9341, audio I/O, microcontroller peripherals; protected servo actuation, local behavior/state and watchdogs.
 2. **Connectivity C6** (on Waveshare board): Wi-Fi 6/BLE communications to optional home backend. P4 remains locally functional in disconnected mode.
-3. **Desk body**: P4 mounted fixed in torso, OV5647 and LCD in moving head, 2-axis servo candidate, speaker and power; same head and control protocol should remain usable with mobile base.
+3. **Reusable core**: P4 mounted fixed in the electronics torso (provisional), OV5647 and LCD in moving head, 2-axis servo candidate and speaker; **no main battery**. An interchangeable base provides regulated power (or external cable during prototyping). The head and electronics are shared; batteries and locomotion live in the bases.
 4. **Optional home AI server**: Python gateway, PC RTX 3080 to handle richer ASR, LLM and vision; cloud API optional. Never on movement safety critical path.
-5. **Future mobile base**: differential-drive motor driver, wheel encoders, bumper, front ToF, downward cliff sensors, protected battery and power; LiDAR/SLAM only when assessed.
+5. **Interchangeable bases**: bench stand with regulated supply; desktop power/battery base; future mobile base with battery, differential-drive motor driver, encoders, bumper, front ToF and cliff sensing. LiDAR/SLAM only later.
 
 ## High-level data flows
 ```mermaid
@@ -36,3 +36,6 @@ flowchart TB
 
 ## Diagram
 See [system architecture SVG](diagrams/system-architecture.svg) and [mechanical concept SVG](diagrams/mechanical-envelope.svg). Diagrams are conceptual, not validated engineering drawings.
+
+## Accepted modular power decision (2026-11-21)
+See [ADR-001: battery in interchangeable bases](adr/ADR-001-modular-base-power.md) and [base/core interface requirements](../electronics/BASE_INTERFACE_V01.md). Initial base switching is **power-off only**; charging during operation requires a verified power-path circuit. Mechanical interface, connector, supply/current ratings and safe base identification remain unresolved. Earlier shell illustrations that placed a battery/regulator in the shared core are historical placeholders, not binding decisions.

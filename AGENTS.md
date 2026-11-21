@@ -38,3 +38,6 @@ Prioritize G1: board STEP + physical connectors, moving camera FFC route, electr
 
 ## Mandatory CAD versioning and mobile previews
 Whenever creating or changing a model in `mechanics/cad/`, **do not overwrite older versions**: use the next sequential `_vNN.scad` filename. Generate and commit `mechanics/exports/<stem>.png`, `<stem>.stl` and `<stem>.glb` for each source revision. Use `python scripts/render_cad_assets.py`, update `docs/MECHANICAL_INDEX.md`, and comply with [CAD_ASSET_POLICY](docs/CAD_ASSET_POLICY.md). The GitHub Actions pipeline auto-generates missing files on agent branches and checks PRs; never merge if required exports are missing. Conceptual STL ≠ validated printable part.
+
+## New architecture constraint — modular power (ADR-001)
+The shared head/electronics core contains **no main battery**. Bench prototype uses cable/regulated source; desk and mobile base variants supply their own protected energy. No agent should embed a battery in the shared core, select an unvalidated connector, or treat charging while running/live hot-swapping as approved. Consult [ADR-001](docs/adr/ADR-001-modular-base-power.md) and [interface requirements](electronics/BASE_INTERFACE_V01.md). New geometry revisions must follow immutable CAD+PNG/STL/GLB rules.

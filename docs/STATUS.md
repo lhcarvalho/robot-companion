@@ -63,3 +63,6 @@ Repository visibility confirmed **public** through GitHub API. **Superseded gove
 - PR [#24](https://github.com/lhcarvalho/robot-companion/pull/24): desk layout V02 uses measured STEP whole-assembly envelope and preserves V01; PNG/STL/GLB generated and PR merged.
 
 **Next technical priorities:** real board mounting holes/connector clearance, verified flex-rated CSI cable in moving neck, P6 physical pin-1 and power loads, then LCD/camera/audio bench tests. Issues #5/#6/#7 remain open. No physical hardware tests recorded.
+
+## Product architecture update — 2026-11-21
+**New approved decision:** no main battery in reusable electronics/head core. Each interchangeable base provides its own regulated energy solution; bench stand starts with a cable and current-limited supply. Desktop/mobile bases can differ in battery capacity or chemistry provided their interface is properly regulated and protected. See [ADR-001](adr/ADR-001-modular-base-power.md). Actual mating connector/pinout, current, charger and power-path behavior are **not selected or tested**. CAD V01/V02 remains historical concept only.
