@@ -34,3 +34,11 @@ Add dated, concise entries with linked commits/issues/PRs after substantive mile
 - [PR #15](https://github.com/lhcarvalho/robot-companion/pull/15): automatic versioned PNG/STL/GLB exports; nine V01 assets committed to `mechanics/exports/` and immutable CAD checks.
 - [PR #16](https://github.com/lhcarvalho/robot-companion/pull/16): baseline ESP32-P4 firmware successfully cross-compiled with ESP-IDF v5.5 in [GitHub Actions](https://github.com/lhcarvalho/robot-companion/actions/runs/44801017376); no hardware was used.
 - [PR #17](https://github.com/lhcarvalho/robot-companion/pull/17): geometric 2D fit calculations and acceptance plan, no STEP import nor verified moving FFC.
+
+## 2026-11-20 — Official board CAD measured; firmware display component
+- [#19](https://github.com/lhcarvalho/robot-companion/pull/19): reproducible vendor ZIP download/inventory, SHA-256; STEP, DXF and PDF present.
+- [#22](https://github.com/lhcarvalho/robot-companion/pull/22): CadQuery parsed original STEP; measured whole assembly 88.359×57.091×20.100 mm. Not a fit analysis.
+- [#21](https://github.com/lhcarvalho/robot-companion/pull/21): P6 40-contact candidate mapping with reserved/shared lines; physical pinout still unverified.
+- [#20](https://github.com/lhcarvalho/robot-companion/pull/20): ESP-IDF SPI ILI9341 adapter compiled in CI with hardware disabled at boot.
+- [#23](https://github.com/lhcarvalho/robot-companion/pull/23): kit-A bundle details, safe-power checklist and BOM structure checks.
+- [#24](https://github.com/lhcarvalho/robot-companion/pull/24): desk V02 concept using STEP-derived bounding box, pending CAD exports/merge at this checkpoint.
