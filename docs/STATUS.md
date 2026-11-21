@@ -1,7 +1,7 @@
 # Project status — 2026-11-20
 
 **Phase:** concept engineering / packaging feasibility, **NOT** assembly-ready.
-**Last merged technical milestones:** versioned CAD exports + CI (PR #15), ESP-IDF cross-compile CI (PR #16), 2D geometry checks (PR #17).
+**Last merged technical milestones:** official Waveshare STEP retrieved and measured (PRs #19/#22), preliminary P6 pin map (#21), SPI ILI9341 driver compiles (#20), Waveshare kit BOM/first power checklist (#23). CAD desk V02 (#24) pending generated exports.
 **No physical component installation, electrical bench test, validated complete CAD assembly, motor calibration, or printed enclosure is recorded in this repository. The baseline firmware DOES compile in GitHub Actions for ESP32-P4; physical bring-up is still untested.** If any happened elsewhere, require evidence before updating status.
 
 ## What was completed
@@ -15,7 +15,7 @@
 ## Reality check
 - **Selected != validated != purchased != tested.**
 - Head/torso CAD uses provisional dimensions and overlapping proxies; no printable mounting brackets yet.
-- **P4 board outer size/connector envelopes** have NOT been established from STEP in repository; 95×70×18 mm is a mockup.
+- **P4 STEP whole-assembly bounds** measured: 88.359 × 57.091 × 20.100 mm. Actual mounting hole coordinates, connector clearance/orientation and physical revision remain unverified. Old 95×70×18 mm V01 proxy is superseded for board volume planning.
 - **Camera moving FFC cable through pan/tilt neck** is the top mechanical risk.
 - Screen's SPI GPIO mapping, power/backlight and simultaneous camera + screen + audio operation are not bench-tested.
 - Servo safe operating torque, head mass and power budget are unknown.
@@ -53,3 +53,13 @@ Repository visibility confirmed **public** through GitHub API. **Superseded gove
 - **Mechanical #17**: added head 2D envelope calculation and assembly acceptance plan. No vendor STEP import, moving-cable fatigue test or confirmed 3D fit. Issue #5 remains open.
 - **Electrical #6**: exact pin/rail verification and regulated servo power still open; do not wire against provisional assignments.
 - **All CAD assets remain exploratory**, not validated printable parts. Next: physical board models, reliable CSI FFC neck design, GPIO/power engineering and actual hardware bring-up.
+
+## November 20, 2026 — STEP, P6, ILI9341 update
+- PR [#19](https://github.com/lhcarvalho/robot-companion/pull/19): vendor ZIP retrieved, CRC and SHA-256 verified; includes 29.86 MB STEP plus DXF/PDF. No manufacturer CAD binaries redistributed.
+- PR [#22](https://github.com/lhcarvalho/robot-companion/pull/22): OpenCascade/CadQuery import successfully measured overall STEP bounding extents **88.359 × 57.091 × 20.100 mm**. [CI measurement](https://github.com/lhcarvalho/robot-companion/actions/runs/44850219227). These are not PCB-hole or port-mount dimensions and do not prove fit.
+- PR [#21](https://github.com/lhcarvalho/robot-companion/pull/21): preliminary 40-pin P6 schematic contacts and provisional SPI/servo signals. Actual physical header orientation and GPIO collision checks remain open.
+- PR [#20](https://github.com/lhcarvalho/robot-companion/pull/20): `robot_display` ILI9341 driver compiled with ESP-IDF v5.5 on the P4; **no display was connected**. GPIO pin allocation and BL circuit unverified, driver only initializes on explicit call.
+- PR [#23](https://github.com/lhcarvalho/robot-companion/pull/23): BOM now records Waveshare KIT-A bundles camera/FFC and 8Ω 2W speaker, plus pre-power checklist and BOM CI.
+- PR [#24](https://github.com/lhcarvalho/robot-companion/pull/24): desk layout V02 uses measured STEP whole-assembly envelope and preserves V01. Merge **only after PNG/STL/GLB exports and CAD CI pass**.
+
+**Next technical priorities:** real board mounting holes/connector clearance, verified flex-rated CSI cable in moving neck, P6 physical pin-1 and power loads, then LCD/camera/audio bench tests. Issues #5/#6/#7 remain open. No physical hardware tests recorded.
