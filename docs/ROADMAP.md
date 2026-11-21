@@ -35,6 +35,6 @@ Three independent branches and PRs (#9 mechanical, #10 electrical, #11 firmware)
 - P6 schematic contacts documented, but physical revision/orientation and GPIO electrical compatibility not signed off.
 - ESP-IDF target compile now includes explicit opt-in ILI9341 driver (PR #20); **peripheral hardware bring-up has not happened**.
 - Kit A includes camera, FFC and speaker; no extra duplicate buy implied. BOM purchase state remains not-recorded.
-- First revised desk V02 geometry is under PR #24, must pass CAD export verification before merge.
+- Desk V02 with official STEP-derived bounding extent and matched PNG/STL/GLB passed CAD export and merged via PR #24.
 
 **G1 not complete. G2 bench testing not complete. G3 printed/mechanical assembly not complete.**
