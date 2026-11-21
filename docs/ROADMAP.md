@@ -29,3 +29,12 @@ Three independent branches and PRs (#9 mechanical, #10 electrical, #11 firmware)
 - Baseline C firmware compiles for ESP32-P4 using ESP-IDF v5.5 (PR #16). Physical validation remains pending.
 - CAD exports (PNG, STL, GLB) and historical version preservation enabled (PR #15). For every new SCAD revision, commit assets with identical versioned stem.
 - A 2D head envelope check was added in PR #17. It does **not** establish 3D mounting compatibility.
+
+## Verified stage G1 progress — 2026-11-20
+- Manufacturer board CAD ZIP available and imported in GitHub Actions; the whole model envelope was measured. **Mounting-holes, ports and neck cable reliability not verified**.
+- P6 schematic contacts documented, but physical revision/orientation and GPIO electrical compatibility not signed off.
+- ESP-IDF target compile now includes explicit opt-in ILI9341 driver (PR #20); **peripheral hardware bring-up has not happened**.
+- Kit A includes camera, FFC and speaker; no extra duplicate buy implied. BOM purchase state remains not-recorded.
+- Desk V02 with official STEP-derived bounding extent and matched PNG/STL/GLB passed CAD export and merged via PR #24.
+
+**G1 not complete. G2 bench testing not complete. G3 printed/mechanical assembly not complete.**
