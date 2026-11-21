@@ -66,3 +66,6 @@ Repository visibility confirmed **public** through GitHub API. **Superseded gove
 
 ## Product architecture update — 2026-11-21
 **New approved decision:** no main battery in reusable electronics/head core. Each interchangeable base provides its own regulated energy solution; bench stand starts with a cable and current-limited supply. Desktop/mobile bases can differ in battery capacity or chemistry provided their interface is properly regulated and protected. See [ADR-001](adr/ADR-001-modular-base-power.md). Actual mating connector/pinout, current, charger and power-path behavior are **not selected or tested**. CAD V01/V02 remains historical concept only.
+
+## Modular attachment concept — 2026-11-21
+Candidate design: structural slide-on rail/cradle + positive latch, accessible manual keyed electrical harness for initial bench/desk prototypes, no hot swapping. Frequent consumer base swapping will require a separately qualified high-cycle blind-mate/other connector. See [concept V01](../mechanics/BASE_COUPLING_CONCEPT_V01.md) and [SVG](diagrams/base-coupling-concept-v01.svg). **No dimensional CAD, source pinout, physical tests, approved connector or batteries.**
