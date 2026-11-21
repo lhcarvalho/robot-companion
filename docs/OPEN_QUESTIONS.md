@@ -15,7 +15,7 @@ Every item should be resolved with **evidence**, an issue/PR link and an updated
 | Q-009 | MED | Face-display actual visible window is ~49×37 mm: does it meet aesthetic goal? | Cosmetic approval |
 | Q-010 | MED | Can P4 use CSI capture, SPI animations, audio, Wi-Fi concurrently at useful rate? | Performance acceptance |
 | Q-011 | HIGH | What local face recognition flow works robustly in household lighting and protects children's biometric templates? | Offline behavior |
-| Q-012 | HIGH | What mechanical/electrical connector will let desk and future wheel base swap safely? | Mobile modularity |
+| Q-012 | HIGH | Which keyed connector, mating geometry, rated rails, type-detection and protected power interface will allow switching among external-cable, desk-battery and mobile-battery bases? | Modularity; see ADR-001 |
 | Q-013 | MED | What exact materials/print tolerances, screws/inserts, printer/outsourced manufacturing constraints? | Printable production |
 | Q-014 | MED | How to route microphone port and accessible mute switch/button? | Audio/privacy |
 
@@ -29,3 +29,6 @@ Every item should be resolved with **evidence**, an issue/PR link and an updated
 
 ## Evidence expectation
 Vendor mechanical drawing/STEP, firmware and logs from hardware tests, photographs with actual measuring scale, electrical schematic or calculations. Label all inferred or estimated information. Close each issue only when the specific criterion is met.
+
+## Base power architecture decision (2026-11-21)
+Battery location is **decided**: interchangeable base, not the shared core. Connector model, regulated voltage/current, charging/power-path design, power-off swap process and base detection remain open. See [ADR-001](adr/ADR-001-modular-base-power.md) and [interface requirements](../electronics/BASE_INTERFACE_V01.md). Do **not** purchase a pack until peak loads are measured and mechanical allocation is established.
