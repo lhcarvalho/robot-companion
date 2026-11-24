@@ -69,3 +69,6 @@ Repository visibility confirmed **public** through GitHub API. **Superseded gove
 
 ## Modular attachment concept — 2026-11-21
 Candidate design: structural slide-on rail/cradle + positive latch, accessible manual keyed electrical harness for initial bench/desk prototypes, no hot swapping. Frequent consumer base swapping will require a separately qualified high-cycle blind-mate/other connector. See [concept V01](../mechanics/BASE_COUPLING_CONCEPT_V01.md) and [SVG](diagrams/base-coupling-concept-v01.svg). **No dimensional CAD, source pinout, physical tests, approved connector or batteries.**
+
+## 2026-11-23 — G7 mobile base option M01
+Added [differential-drive mobile base design V01](../mechanics/MOBILE_BASE_DIFFERENTIAL_V01.md) and a [top-view schematic](diagrams/mobile-base-differential-v01.svg). **Concept only**: 2 encoded drive motors, passive caster, protected battery, base-local motor driver and failsafe controller, obstacle/bumper and cliff safety. No wheel, motor, controller, battery, geometry or current validated; no autonomous indoor driving. Alternative interchangeable bases remain possible.
