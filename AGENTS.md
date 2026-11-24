@@ -44,3 +44,6 @@ The shared head/electronics core contains **no main battery**. Bench prototype u
 
 ## Base attachment concept V01
 Read [mechanics/BASE_COUPLING_CONCEPT_V01.md](mechanics/BASE_COUPLING_CONCEPT_V01.md) before designing the interface. Initial concept is slide rails + positive latch + manually accessible keyed plug, *not* pogo/magnets or proven blind-mate. Molex Micro-Fit 3.0 typically has only 30 mating cycles; not a high-cycle base-change interface. No mechanical dimensions, current rating, final wiring or validated printable component are approved. Do not call the explanatory SVG printable CAD. Future _vNN SCAD must preserve old models and include generated PNG/STL/GLB.
+
+## Mobile base concept M01 — NOT final or build-ready (2026-11-23)
+Read [mechanics/MOBILE_BASE_DIFFERENTIAL_V01.md](mechanics/MOBILE_BASE_DIFFERENTIAL_V01.md) before mobile-base work. M01 is a candidate *one of several possible interchangeable bases*: 2 encoded geared motors + passive caster, base battery, independent motor watchdog, physical bumper and cliff sensors. Do not order specific motor/driver or approve unsafe tabletop roaming based only on concept dimensions. G7 gates stay open; later CAD requires new versioned SCAD and PNG/STL/GLB.

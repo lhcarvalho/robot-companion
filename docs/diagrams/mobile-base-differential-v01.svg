@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 710" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Differential drive mobile base option M01, top and side view, conceptual">
+<rect width="1200" height="710" fill="#f7f9fc"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="55" y="62" font-size="34" font-weight="bold" fill="#1e3348">Robot Companion — mobile base option M01</text>
+<text x="55" y="96" font-size="19" fill="#62798e">Differential drive 2WD + passive support • conceptual only, not dimensioned</text>
+<text x="125" y="149" font-size="23" font-weight="bold" fill="#31465d">Top view</text>
+<rect x="177" y="190" width="356" height="380" rx="124" fill="#dfe9f4" stroke="#6c86a2" stroke-width="4"/>
+<rect x="155" y="305" width="40" height="140" rx="15" fill="#3b444d"/><rect x="515" y="305" width="40" height="140" rx="15" fill="#3b444d"/>
+<path d="M171 331 V419 M539 331 V419" stroke="#91a0ad" stroke-width="7" stroke-dasharray="6 9"/>
+<rect x="230" y="245" width="250" height="210" rx="68" fill="#b9cde2" stroke="#6c86a2" stroke-width="3"/>
+<text x="355" y="297" font-size="22" font-weight="bold" text-anchor="middle" fill="#213f59">Shared core</text>
+<text x="355" y="325" font-size="19" text-anchor="middle" fill="#213f59">head + electronics</text>
+<rect x="265" y="351" width="182" height="58" rx="12" fill="#74a69f" stroke="#48786c" stroke-width="3"/>
+<text x="356" y="376" font-size="18" text-anchor="middle" fill="#ffffff" font-weight="bold">Slide coupling</text>
+<text x="356" y="397" font-size="15" text-anchor="middle" fill="#ffffff">and latch</text>
+<circle cx="355" cy="516" r="28" fill="#fdfefe" stroke="#637b8d" stroke-width="5"/><circle cx="355" cy="516" r="9" fill="#637b8d"/>
+<path d="M355 220 V166 M340 183 L355 163 L370 183" fill="none" stroke="#35846f" stroke-width="5"/>
+<text x="60" y="295" font-size="17" fill="#2d465b">Left motor</text><path d="M132 306 L155 345" fill="none" stroke="#69859b" stroke-width="2"/>
+<text x="547" y="297" font-size="17" fill="#2d465b">Right motor</text><path d="M545 305 L532 343" fill="none" stroke="#69859b" stroke-width="2"/>
+<text x="415" y="602" font-size="17" fill="#2d465b">Passive caster</text><path d="M415 578 L379 532" stroke="#69859b" stroke-width="2"/>
+<rect x="662" y="167" width="477" height="445" rx="26" fill="#ffffff" stroke="#c1d0df" stroke-width="3"/>
+<text x="702" y="221" font-size="24" font-weight="bold" fill="#273f55">Base-local hardware</text>
+<g font-size="19" fill="#395169">
+<text x="704" y="269">2 geared DC motors + encoders</text>
+<text x="704" y="306">Dual motor driver + local safety</text>
+<text x="704" y="343">Protected battery and regulators</text>
+<text x="704" y="380">Forward ToF + physical bumper</text>
+<text x="704" y="417">Downward cliff/edge sensors</text>
+<text x="704" y="454">Base identity + safe stop watchdog</text>
+</g>
+<path d="M701 477 H1100" stroke="#d1dce6" stroke-width="2"/>
+<text x="704" y="522" font-size="18" fill="#aa6431">Not approved: component size, connector,</text>
+<text x="704" y="552" font-size="18" fill="#aa6431">power rail or free-roaming behavior.</text>
+<text x="55" y="671" font-size="18" fill="#556e84">Base rolls; head/core can still be moved to a stationary desk base.</text>
+</g></svg>

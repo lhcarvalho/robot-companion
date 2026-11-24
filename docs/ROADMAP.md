@@ -38,3 +38,6 @@ Three independent branches and PRs (#9 mechanical, #10 electrical, #11 firmware)
 - Desk V02 with official STEP-derived bounding extent and matched PNG/STL/GLB passed CAD export and merged via PR #24.
 
 **G1 not complete. G2 bench testing not complete. G3 printed/mechanical assembly not complete.**
+
+## G7 preliminary architecture option — 2026-11-23
+[Mobile base option M01](../mechanics/MOBILE_BASE_DIFFERENTIAL_V01.md) documents **two independent driven wheels with encoders and a passive third caster**, with protected base battery and motor safety controller. This is **one candidate base**, not a final selected mechanical design or an acceleration of G7. No parts selected or tested. Must satisfy bumper/cliff and physical stop gates before free movement near people or edges.

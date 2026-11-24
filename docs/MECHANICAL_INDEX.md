@@ -48,3 +48,6 @@ The exact Waveshare ESP32-P4-Module-DEV-KIT STEP was downloaded and parsed by Ca
 
 ## Base coupling concept — 2026-11-21
 [Modular base coupling concept V01](../mechanics/BASE_COUPLING_CONCEPT_V01.md) · [SVG 2D view](diagrams/base-coupling-concept-v01.svg). **Conceptual slide cradle/latch with manual plug**; no dimensioned print-ready CAD/mesh, real connector placement, tolerance or locking force claim. Existing V01/V02 CAD models unchanged. A subsequent mechanically measured CAD revision must be created as a new numbered `_vNN.scad` and exported with matched PNG/STL/GLB.
+
+## Mobile base option — 2026-11-23
+[Mobile differential-drive concept V01](../mechanics/MOBILE_BASE_DIFFERENTIAL_V01.md) · [2D SVG](diagrams/mobile-base-differential-v01.svg). Two driven wheels plus passive support, generic torso cradle. Diagram is **not to scale**, and engineering size ranges are illustrative, not validated or print-ready. Next 3D CAD needs a new `_vNN.scad` with matching exports, after actual motor and base interfaces are sized.
