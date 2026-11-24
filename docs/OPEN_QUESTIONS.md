@@ -35,3 +35,6 @@ Battery location is **decided**: interchangeable base, not the shared core. Conn
 
 ## Coupling concept open validation (2026-11-21)
 A **slide cradle + mechanical latch + manual unplug harness** is the prototype direction (not electrically or mechanically approved). Remaining: exact rail section/location, strength/print tolerances, insertion/removal access, power rails/current, connector/harness choice (Micro-Fit typically 30 mating cycles, not high-cycle), exposed contact safety, ID/protocol and tip stability. See [mechanics concept](../mechanics/BASE_COUPLING_CONCEPT_V01.md).
+
+## First mobile-base candidate M01 (2026-11-23)
+Two independently driven encoder wheels + a passive caster is a **candidate**, not a frozen design. Open: wheel radius/tread, shaft and wheel hubs, gearbox noise/torque/current, H-bridge stall rating, real pack volume, center of mass, tipping, base coupler stiffness, ToF/bumper/cliff blind spots, watchdog independence, floor trials and charging. See [M01 spec](../mechanics/MOBILE_BASE_DIFFERENTIAL_V01.md). G7 remains blocked until physical safety validation.
