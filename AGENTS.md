@@ -1,6 +1,6 @@
 # AGENTS.md — entrypoint for any new agent
 
-**Read this BEFORE making edits. No chat history is needed.** This repository is the single source of truth for a modular ESP32-P4 + ESP32-C6 companion robot.
+**Read this BEFORE making edits. No chat history is needed.** This repository is the single source of truth for a modular ESP32-P4 companion robot (2026-11-24 purchase: NANO-WIFI6-DB uses ESP32-C5; earlier C6 assets remain historical).
 
 ## Mandatory startup order
 1. [README.md](README.md)
@@ -47,3 +47,6 @@ Read [mechanics/BASE_COUPLING_CONCEPT_V01.md](mechanics/BASE_COUPLING_CONCEPT_V0
 
 ## Mobile base concept M01 — NOT final or build-ready (2026-11-23)
 Read [mechanics/MOBILE_BASE_DIFFERENTIAL_V01.md](mechanics/MOBILE_BASE_DIFFERENTIAL_V01.md) before mobile-base work. M01 is a candidate *one of several possible interchangeable bases*: 2 encoded geared motors + passive caster, base battery, independent motor watchdog, physical bumper and cliff sensors. Do not order specific motor/driver or approve unsafe tabletop roaming based only on concept dimensions. G7 gates stay open; later CAD requires new versioned SCAD and PNG/STL/GLB.
+
+## New purchase baseline — 2026-11-24
+The user showed an AliExpress order awaiting delivery for **Waveshare ESP32-P4-NANO-WIFI6-DB Kit A** (P4+C5, camera, speaker and cables bundled) and **Waveshare 2-inch IPS SPI LCD**, at listed item prices R$213.73 + R$74.79; screenshot overall order total R$394.04 including undisclosed breakdown. Marked **ordered, not received or bench-tested** in BOM. Old P4-Module-DEV-KIT STEP-derived CAD and ILI9341 firmware are **NOT compatible proof**; future mechanical model requires new dimensioned Nano reference, and firmware requires C5 and screen-controller checks. Do not claim GPIO/software support without evidence. Preserve all old CAD exports and code as historical until migration verified.
