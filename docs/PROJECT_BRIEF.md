@@ -17,10 +17,10 @@
 5. Privacy-first local enrollment/deletion for children's face biometrics.
 
 ## Current product decisions (not necessarily validated hardware)
-- ESP32-P4 plus ESP32-C6 Waveshare ESP32-P4-Module-DEV-KIT; consider official kit A with OV5647 camera and cable.
+- **Purchased, awaiting delivery (2026-11-24): Waveshare ESP32-P4-NANO-WIFI6-DB Kit A**, ESP32-P4 main + ESP32-C5 wireless; older P4+C6 Module-DEV-KIT design and STEP are historical references, not validated for the purchased PCB.
 - Nominal robot height 150 mm; acceptable conceptual range 120–180 mm.
 - Rounded-square head, proposed 105 W × 85 H × 60 D mm.
-- Waveshare 2.4inch LCD Module, ILI9341, SPI, SKU 18366.
+- **Purchased, awaiting delivery (2026-11-24): Waveshare 2-inch IPS SPI LCD (240×320)**; exact controller, connectors and mounting need verification. The 2.4-inch ILI9341 baseline driver and CAD are historical.
 - Waveshare RPi Camera (B), OV5647, CSI-2.
 - Pan/tilt concept using two MG90S *candidate* servos, pan ±45°, tilt ±20° *targets only*.
 - ESP-IDF; ESP-DL/ESP-WHO for supported vision, LVGL for animations, C6 for connectivity, optional server for advanced AI.
