@@ -4,11 +4,11 @@ Status meanings: **DECIDED** product/strategy choice; **CANDIDATE** provisional 
 
 | ID | Status | Decision | Why | Revisit when |
 |---|---|---|---|---|
-| D-001 | DECIDED | Use ESP32-P4 + C6 as central platform, not Pi5 or ESP32-S3+Grove | Offline lightweight vision and rich I/O without Raspberry Pi price/power | Specific board fails functional tests |
+| D-001 | DECIDED | ESP32-P4 as main processor; **ordered Waveshare ESP32-P4-NANO-WIFI6-DB with ESP32-C5** for first prototype | Smaller candidate board and Wi-Fi dual band; purchased 2026-11-24 | Actual C5 link, mechanical/electrical tests pending |
 | D-002 | DECIDED | Modular shared head/electronics; removable desk and wheeled bases | Reuse electronics and software | Interface design proves infeasible |
 | D-003 | DECIDED | Medium robot; nominal 150 mm, conceptual 120–180 mm | Desk-scale but permits camera/audio/mechanics | Accurate component models prove size insufficient |
 | D-004 | DECIDED | Rounded-square head | Room for front expressive display; approachable look | Structural packaging study |
-| D-005 | CANDIDATE | Waveshare 2.4-inch ILI9341 SPI LCD SKU 18366 | Compact dimensions and ESP-IDF driver | GPIO/driver/optical/fit benchmarks |
+| D-005 | DECIDED | **Ordered Waveshare 2-inch IPS SPI LCD** (240x320; ST7789 controller to verify) instead of 2.4-inch ILI9341 | Smaller panel and IPS aesthetic, purchased 2026-11-24 | Controller, GPIO, fit, optical tests pending |
 | D-006 | CANDIDATE | Waveshare RPi Camera (B) OV5647 CSI-2, ideally P4-A kit | Vendor-supported camera/cable pair | Mechanical and on-board validation |
 | D-007 | CANDIDATE | Two MG90S servos, pan ±45°, tilt ±20° | Economical two-axis head mechanism | Measured moving mass, fatigue and torque |
 | D-008 | DECIDED | P4 in fixed torso, camera and LCD in moving head as initial layout | Reduced servo moving mass | Moving FFC proves unsuitable |
